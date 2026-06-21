@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Argentina ETF",
+    "ticker": "ARGT",
+    "currency": "USD",
+    "min": 80,
+    "max": 90
+  },
+  {
+    "name": "Constellation Software",
+    "ticker": "CSU.TO",
+    "currency": "CAD",
+    "min": 3000,
+    "max": 3200
+  }
+]
