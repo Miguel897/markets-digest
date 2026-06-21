@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-from financial_markets_digest.indicators import ema, pct_change, summarize
-from financial_markets_digest.instruments import Instrument, Section
+from markets_digest.indicators import ema, pct_change, summarize
+from markets_digest.instruments import Instrument, Section
 
 
 def _frame(closes: list[float]) -> pd.DataFrame:

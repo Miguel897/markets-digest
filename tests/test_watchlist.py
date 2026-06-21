@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-from financial_markets_digest.config import WatchItem
-from financial_markets_digest.watchlist import BandStatus, evaluate
+from markets_digest.config import WatchItem
+from markets_digest.watchlist import BandStatus, evaluate
 
 
 def _frame(closes: list[float]) -> pd.DataFrame:

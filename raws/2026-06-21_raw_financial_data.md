@@ -1,6 +1,6 @@
 # Financial Markets Digest - Raw Data
 
-Generated: 2026-06-21 23:16 local
+Generated: 2026-06-21 23:41 local
 
 Per-row dates reflect each market's latest session (different time zones).
 
@@ -25,7 +25,7 @@ Per-row dates reflect each market's latest session (different time zones).
 ## FX & Rates
 | Instrument | Close | Day% | Open | High | Low | Volume | Date | Src |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| EUR/USD | 1.1463 | +0.04% | 1.1457 | 1.1471 | 1.1457 | n/a | 2026-06-21 | yfinance |
+| EUR/USD | 1.1471 | +0.10% | 1.1457 | 1.1471 | 1.1457 | n/a | 2026-06-21 | yfinance |
 | US yield 5y (2y proxy) | 4.22 | -0.09% | 4.25 | 4.25 | 4.19 | n/a | 2026-06-18 | yfinance |
 | US yield 10y | 4.45 | -0.27% | 4.45 | 4.45 | 4.42 | n/a | 2026-06-18 | yfinance |
 | US yield 30y (20y proxy) | 4.90 | -0.51% | 4.87 | 4.90 | 4.86 | n/a | 2026-06-18 | yfinance |
@@ -39,7 +39,7 @@ Per-row dates reflect each market's latest session (different time zones).
 ## Crypto
 | Instrument | Close | Day% | Open | High | Low | Volume | Date | Src |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| Bitcoin | 63,597.16 | -1.00% | 64,240.91 | 64,461.07 | 63,541.68 | 14,638,209,024 | 2026-06-21 | yfinance |
+| Bitcoin | 63,856.34 | -0.60% | 64,240.91 | 64,461.07 | 63,504.79 | 15,115,906,048 | 2026-06-21 | yfinance |
 
 ## Volatility
 | Instrument | Close | Day% | Open | High | Low | Volume | Date | Src |

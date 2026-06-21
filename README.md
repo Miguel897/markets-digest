@@ -1,4 +1,4 @@
-# financial-markets-digest
+# markets-digest
 
 Console digest of daily financial-market data, designed to be run by a weekday Claude routine.
 The script prints a clean, structured, LLM-readable snapshot of global markets to stdout and
@@ -36,7 +36,7 @@ Securities to follow closely are defined in [`config/watchlist.json`](config/wat
 
 ```bash
 uv sync
-uv run python -m financial_markets_digest
+uv run python -m markets_digest
 ```
 
 This prints the digest and writes `raws/YYYY-MM-DD_raw_financial_data.md`.

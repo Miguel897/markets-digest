@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 # config/ sits at the repo root, two levels up from this file
-# (src/financial_markets_digest/config.py -> repo root).
+# (src/markets_digest/config.py -> repo root).
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 WATCHLIST_PATH = _REPO_ROOT / "config" / "watchlist.json"
 

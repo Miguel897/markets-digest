@@ -1,6 +1,6 @@
 """Entry point: fetch market data, print the digest, and archive a copy.
 
-Run with ``python -m financial_markets_digest`` (or ``uv run python -m financial_markets_digest``).
+Run with ``python -m markets_digest`` (or ``uv run python -m markets_digest``).
 """
 
 from __future__ import annotations
