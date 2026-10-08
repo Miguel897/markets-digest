@@ -70,17 +70,32 @@ band.
 ## Step 5 — Commit and push
 
 Stage both artifacts — the raw data file and the analysis report — and commit them together
-to `main`, then push:
+on `main`, sync with the remote, then push to `main`:
 
 ```bash
+git checkout main
 git add raws/YYYY-MM-DD_raw_financial_data.md reports/YYYY-MM-DD_market_digest.md
 git commit -m "Daily markets digest YYYY-MM-DD"
+git pull --rebase origin main
 git push origin main
 ```
 
-Replace `YYYY-MM-DD` with the report date. Do not commit unrelated files. Confirm the push
-succeeded and report the commit hash and a one-line summary of the day's market in your final
-message.
+Replace `YYYY-MM-DD` with the report date. Do not commit unrelated files. Pushing to `main` is
+the intended target of this routine and is explicitly authorized.
+
+If the push to `main` is rejected:
+
+- **Rebase conflict:** abort the rebase (`git rebase --abort`) and treat it as a rejected push.
+- **Branch restriction or protection** (the session only allows `claude/*` branches, or `main`
+  is protected): push the same commit to a `claude/markets-digest-YYYY-MM-DD` branch instead
+  and state clearly in your final message that it did not land on `main`.
+- **Permission error (403 / "not accessible by integration"):** do not retry and do not try
+  alternative push paths. Report the exact error and that write access to the repository must
+  be granted.
+
+Make at most one fallback attempt; never loop on push retries. In your final message, report
+the commit hash, the branch it landed on (or the push error), and a one-line summary of the
+day's market.
 
 ## Guardrails
 
